@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp": "2026-06-04T09:03:08.815030",
+    "drift_topic": "interest_rate",
+    "drift_severity": "HIGH",
+    "drift_count": 5,
+    "new_rule_id": "RBI-DL-PATCH-INT-001",
+    "new_rule_title": "Mandatory and Explicit Disclosure of All Interest Rate Components and Annual Percentage Rate (APR)",
+    "patch_reason": "The AI advisor is repeatedly failing to disclose the Annual Percentage Rate (APR) and the annual interest rate statement, along with itemized charges, leading to multiple violations. This enhanced guideline provides more explicit instructions and examples to ensure comprehensive disclosure of all interest rate components and associated costs."
+  }
+]

@@ -1,0 +1,475 @@
+{
+  "version": "1.0",
+  "source": "RBI Digital Lending Guidelines 2022 + Master Directions 2023",
+  "rules": [
+    {
+      "id": "RBI-DL-001",
+      "category": "interest_rate",
+      "title": "Annual Percentage Rate Disclosure",
+      "rule": "Lenders must disclose the Annual Percentage Rate (APR) inclusive of all charges before loan sanction.",
+      "violation_keywords": [
+        "interest rate",
+        "rate of interest",
+        "APR",
+        "annual rate"
+      ],
+      "safe_threshold": "APR must be clearly stated as a yearly percentage including all fees",
+      "severity": "HIGH",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-002",
+      "category": "interest_rate",
+      "title": "No Hidden Charges",
+      "rule": "All charges including processing fees, prepayment penalties must be disclosed upfront.",
+      "violation_keywords": [
+        "processing fee",
+        "charges",
+        "fees",
+        "penalty"
+      ],
+      "safe_threshold": "All fees must be disclosed before loan agreement",
+      "severity": "HIGH",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-003",
+      "category": "interest_rate",
+      "title": "Interest Rate Cap for Microfinance",
+      "rule": "For microfinance loans, interest rate cannot exceed 24% per annum.",
+      "violation_keywords": [
+        "microfinance",
+        "micro loan",
+        "small loan",
+        "JLG"
+      ],
+      "safe_threshold": "Maximum 24% per annum for microfinance",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-004",
+      "category": "eligibility",
+      "title": "Creditworthiness Assessment",
+      "rule": "Lenders must assess creditworthiness based on credit bureau data before sanctioning any loan.",
+      "violation_keywords": [
+        "eligible",
+        "eligibility",
+        "qualify",
+        "approved"
+      ],
+      "safe_threshold": "Eligibility must reference credit score check",
+      "severity": "MEDIUM",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-005",
+      "category": "eligibility",
+      "title": "Income Verification Required",
+      "rule": "Lenders must verify income through bank statements or ITR before determining loan eligibility.",
+      "violation_keywords": [
+        "income",
+        "salary",
+        "earnings",
+        "monthly income"
+      ],
+      "safe_threshold": "Income verification is mandatory, not self-declared",
+      "severity": "MEDIUM",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-006",
+      "category": "eligibility",
+      "title": "Debt-to-Income Ratio Limit",
+      "rule": "EMI obligations should not exceed 50% of net monthly income for retail loans.",
+      "violation_keywords": [
+        "EMI",
+        "monthly payment",
+        "instalment",
+        "debt"
+      ],
+      "safe_threshold": "Total EMIs should be under 50% of net income",
+      "severity": "HIGH",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-007",
+      "category": "disclosure",
+      "title": "Key Fact Statement Mandatory",
+      "rule": "Lenders must provide a Key Fact Statement (KFS) before loan execution containing all loan terms.",
+      "violation_keywords": [
+        "loan terms",
+        "agreement",
+        "sanction",
+        "approve"
+      ],
+      "safe_threshold": "KFS must be provided before any loan agreement",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-008",
+      "category": "disclosure",
+      "title": "Cooling Off Period",
+      "rule": "Borrowers must be given a minimum 3-day cooling off period to exit a loan without penalty.",
+      "violation_keywords": [
+        "cancel",
+        "exit",
+        "withdraw",
+        "cooling period"
+      ],
+      "safe_threshold": "3-day no-penalty exit window is mandatory",
+      "severity": "MEDIUM",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-009",
+      "category": "disclosure",
+      "title": "Recovery Agent Disclosure",
+      "rule": "Lenders must disclose use of recovery agents and their code of conduct to borrowers.",
+      "violation_keywords": [
+        "recovery",
+        "collection",
+        "defaulter",
+        "overdue"
+      ],
+      "safe_threshold": "Recovery process and agents must be disclosed",
+      "severity": "MEDIUM",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-010",
+      "category": "disclosure",
+      "title": "Grievance Redressal Officer",
+      "rule": "Every digital lender must display Grievance Redressal Officer contact on app and website.",
+      "violation_keywords": [
+        "complaint",
+        "grievance",
+        "issue",
+        "problem"
+      ],
+      "safe_threshold": "Grievance officer details must be provided",
+      "severity": "LOW",
+      "action": "APPEND"
+    },
+    {
+      "id": "RBI-DL-011",
+      "category": "repayment",
+      "title": "Prepayment Without Penalty",
+      "rule": "Borrowers must be allowed to prepay floating rate loans without any prepayment penalty.",
+      "violation_keywords": [
+        "prepay",
+        "foreclose",
+        "early payment",
+        "part payment"
+      ],
+      "safe_threshold": "No prepayment penalty on floating rate loans",
+      "severity": "HIGH",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-012",
+      "category": "repayment",
+      "title": "EMI Calculation Transparency",
+      "rule": "EMI must be calculated on reducing balance method and clearly explained to borrower.",
+      "violation_keywords": [
+        "EMI calculation",
+        "monthly payment",
+        "instalment amount"
+      ],
+      "safe_threshold": "EMI on reducing balance method must be disclosed",
+      "severity": "MEDIUM",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-013",
+      "category": "repayment",
+      "title": "Repayment Schedule Mandatory",
+      "rule": "A complete repayment schedule showing principal and interest breakup must be provided.",
+      "violation_keywords": [
+        "repayment schedule",
+        "amortization",
+        "payment plan"
+      ],
+      "safe_threshold": "Full repayment schedule must be shared before disbursement",
+      "severity": "MEDIUM",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-014",
+      "category": "kyc",
+      "title": "Video KYC Compliance",
+      "rule": "Digital lenders using V-KYC must follow RBI Video KYC guidelines including live photo and ID verification.",
+      "violation_keywords": [
+        "KYC",
+        "verification",
+        "identity",
+        "Aadhaar",
+        "PAN"
+      ],
+      "safe_threshold": "V-KYC must follow RBI guidelines",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-015",
+      "category": "kyc",
+      "title": "Data Localization",
+      "rule": "All borrower data must be stored on servers located in India.",
+      "violation_keywords": [
+        "data",
+        "information",
+        "personal details",
+        "stored"
+      ],
+      "safe_threshold": "Borrower data must be India-stored",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-016",
+      "category": "interest_rate",
+      "title": "Penal Charges Not Compounded",
+      "rule": "Penal charges for loan default must not be compounded. They must be applied on overdue amount only.",
+      "violation_keywords": [
+        "penalty",
+        "penal",
+        "late fee",
+        "default charge"
+      ],
+      "safe_threshold": "Penal charges must not be compounded",
+      "severity": "HIGH",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-017",
+      "category": "eligibility",
+      "title": "No Automatic Loan Renewal",
+      "rule": "Lenders cannot auto-renew or auto-disburse loans without explicit borrower consent.",
+      "violation_keywords": [
+        "auto renew",
+        "automatic",
+        "pre-approved",
+        "instant approval"
+      ],
+      "safe_threshold": "Explicit consent required for every loan",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-018",
+      "category": "disclosure",
+      "title": "Loan Purpose Documentation",
+      "rule": "Purpose of loan must be documented and loan cannot be used for speculative purposes.",
+      "violation_keywords": [
+        "loan purpose",
+        "end use",
+        "utilization"
+      ],
+      "safe_threshold": "Loan purpose must be documented",
+      "severity": "LOW",
+      "action": "APPEND"
+    },
+    {
+      "id": "RBI-DL-019",
+      "category": "repayment",
+      "title": "No Negative Amortization",
+      "rule": "EMI amount must always cover at least the interest due. Negative amortization is prohibited.",
+      "violation_keywords": [
+        "EMI",
+        "interest only",
+        "balloon payment"
+      ],
+      "safe_threshold": "EMI must cover full interest due",
+      "severity": "HIGH",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-020",
+      "category": "kyc",
+      "title": "Consent for Credit Bureau Check",
+      "rule": "Explicit borrower consent must be taken before accessing credit bureau reports.",
+      "violation_keywords": [
+        "CIBIL",
+        "credit score",
+        "credit report",
+        "credit bureau"
+      ],
+      "safe_threshold": "Consent required before credit bureau access",
+      "severity": "MEDIUM",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-021",
+      "category": "disclosure",
+      "title": "Digital Loan Agreement",
+      "rule": "Loan agreement must be provided in digital form to borrower before disbursal.",
+      "violation_keywords": [
+        "loan agreement",
+        "loan document",
+        "sign",
+        "execute"
+      ],
+      "safe_threshold": "Digital copy of agreement mandatory before disbursal",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-022",
+      "category": "interest_rate",
+      "title": "Transparent Rate Communication",
+      "rule": "Interest rate must be communicated as annual rate, not monthly or weekly to avoid confusion.",
+      "violation_keywords": [
+        "per month",
+        "monthly rate",
+        "weekly rate",
+        "daily rate"
+      ],
+      "safe_threshold": "Rate must always be stated annually",
+      "severity": "HIGH",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-023",
+      "category": "eligibility",
+      "title": "Age Eligibility",
+      "rule": "Borrower must be minimum 18 years old. Loans cannot be sanctioned to minors.",
+      "violation_keywords": [
+        "age",
+        "years old",
+        "minor",
+        "student"
+      ],
+      "safe_threshold": "Minimum age 18 years mandatory",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-024",
+      "category": "repayment",
+      "title": "Loan Tenure Disclosure",
+      "rule": "Exact loan tenure in months must be disclosed. Vague terms like 'flexible tenure' are non-compliant.",
+      "violation_keywords": [
+        "tenure",
+        "duration",
+        "period",
+        "term"
+      ],
+      "safe_threshold": "Exact tenure in months must be stated",
+      "severity": "MEDIUM",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-025",
+      "category": "disclosure",
+      "title": "Insurance Not Mandatory",
+      "rule": "Lenders cannot make insurance purchase mandatory for loan approval.",
+      "violation_keywords": [
+        "insurance",
+        "policy",
+        "cover",
+        "protection plan"
+      ],
+      "safe_threshold": "Insurance must be optional, not mandatory",
+      "severity": "HIGH",
+      "action": "REWRITE"
+    },
+    {
+      "id": "RBI-DL-026",
+      "category": "kyc",
+      "title": "Aadhaar Usage Compliance",
+      "rule": "Aadhaar can only be used for KYC with explicit consent and must follow UIDAI guidelines.",
+      "violation_keywords": [
+        "Aadhaar",
+        "biometric",
+        "UIDAI",
+        "fingerprint"
+      ],
+      "safe_threshold": "Aadhaar usage requires explicit consent and UIDAI compliance",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-027",
+      "category": "interest_rate",
+      "title": "No Usurious Interest Rates",
+      "rule": "Interest rates must be fair and not usurious. RBI can intervene if rates are deemed exploitative.",
+      "violation_keywords": [
+        "interest",
+        "rate",
+        "charge",
+        "cost of loan"
+      ],
+      "safe_threshold": "Rate must be fair and market-aligned",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-028",
+      "category": "repayment",
+      "title": "No Coercive Recovery",
+      "rule": "Recovery agents cannot use coercive methods. Borrowers must be treated with dignity.",
+      "violation_keywords": [
+        "recovery",
+        "collect",
+        "due",
+        "overdue",
+        "defaulter"
+      ],
+      "safe_threshold": "Recovery must follow RBI fair practice code",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-029",
+      "category": "disclosure",
+      "title": "Nodal Officer Contact",
+      "rule": "Contact details of Nodal Officer for complaints must be displayed prominently.",
+      "violation_keywords": [
+        "contact",
+        "helpline",
+        "support",
+        "customer care"
+      ],
+      "safe_threshold": "Nodal officer contact must be provided",
+      "severity": "LOW",
+      "action": "APPEND"
+    },
+    {
+      "id": "RBI-DL-030",
+      "category": "eligibility",
+      "title": "No Discrimination",
+      "rule": "Loan eligibility criteria must not discriminate based on religion, caste, gender or region.",
+      "violation_keywords": [
+        "religion",
+        "caste",
+        "gender",
+        "region",
+        "community"
+      ],
+      "safe_threshold": "Eligibility must be non-discriminatory",
+      "severity": "HIGH",
+      "action": "ESCALATE"
+    },
+    {
+      "id": "RBI-DL-PATCH-INT-001",
+      "category": "interest_rate",
+      "title": "Mandatory and Explicit Disclosure of All Interest Rate Components and Annual Percentage Rate (APR)",
+      "rule": "Lenders must, at the point of loan sanction and prior to any customer commitment, explicitly disclose the Annual Percentage Rate (APR) which encompasses the interest rate and all associated charges. This disclosure must be presented clearly and unambiguously, alongside a statement of the annual interest rate. All other charges, including but not limited to processing fees, administrative fees, prepayment penalties, and any other fees that contribute to the overall cost of credit, must be itemized and disclosed upfront. For microfinance loans, the disclosed annual interest rate, inclusive of all charges, must not exceed 24% per annum. Failure to provide a comprehensive APR disclosure, a clear annual rate statement, or to itemize all charges upfront constitutes a violation.",
+      "violation_keywords": [
+        "APR disclosure missing",
+        "annual rate statement missing",
+        "hidden charges",
+        "processing fee not upfront",
+        "prepayment penalty not disclosed"
+      ],
+      "safe_threshold": "A compliant response must include: 1. A clearly stated Annual Percentage Rate (APR). 2. A clear statement of the annual interest rate. 3. A detailed breakdown of all associated charges (e.g., processing fee, administrative fee, etc.). 4. For microfinance loans, confirmation that the total annual interest rate does not exceed 24%.",
+      "severity": "HIGH",
+      "action": "REWRITE",
+      "patch_reason": "The AI advisor is repeatedly failing to disclose the Annual Percentage Rate (APR) and the annual interest rate statement, along with itemized charges, leading to multiple violations. This enhanced guideline provides more explicit instructions and examples to ensure comprehensive disclosure of all interest rate components and associated costs.",
+      "generated_at": "2026-06-04T09:03:02.927899"
+    }
+  ],
+  "last_updated": "2026-06-04T09:03:08.809917",
+  "patch_count": 1
+}
