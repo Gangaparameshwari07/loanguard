@@ -2,9 +2,18 @@
 
 > **An autonomous AI agent that intercepts loan advisor responses in real time, evaluates them against RBI Digital Lending Guidelines using Gemini, and rewrites or escalates non-compliant responses before a customer sees legally wrong information — fully traced and monitored through Arize Phoenix.**
 
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-Run-4285F4?style=flat&logo=googlecloud&logoColor=white)
+![Vertex AI](https://img.shields.io/badge/Vertex_AI-Gemini_2.5-4285F4?style=flat&logo=googlecloud&logoColor=white)
+![Arize Phoenix](https://img.shields.io/badge/Arize-Phoenix-7C3AED?style=flat&logo=data:image/png;base64,iVBORw0KGgo=&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=flat&logo=fastapi&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+![Hackathon](https://img.shields.io/badge/Google_Cloud-Rapid_Agent_Hackathon_2026-orange?style=flat&logo=googlecloud)
+
 **Built for:** Google Cloud Rapid Agent Hackathon 2026 · **Track:** Arize  
 **Live Demo:** https://loanguard-593852498859.us-central1.run.app  
-**Video:** [Demo Video Link]
+**Video:** [Demo Video Link]  
+**GitHub:** https://github.com/Gangaparameshwari07/loanguard
 
 ---
 
