@@ -12,7 +12,7 @@
 
 **Built for:** Google Cloud Rapid Agent Hackathon 2026 · **Track:** Arize  
 **Live Demo:** https://loanguard-593852498859.us-central1.run.app  
-**Video:** [Demo Video Link]  
+**Video:** https://www.youtube.com/watch?v=nzK-0ezsjDk 
 **GitHub:** https://github.com/Gangaparameshwari07/loanguard
 
 ---
